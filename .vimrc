@@ -1,4 +1,14 @@
 set nocompatible                " choose no compatibility with legacy vi
+
+" Vundle
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+silent! Bundle 'gmarik/vundle'
+
+Bundle 'tpope/vim-endwise'
+
+" Basic Configuration
 syntax enable
 set encoding=utf-8
 set number                      " show line numbers
