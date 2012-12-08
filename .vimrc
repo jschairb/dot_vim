@@ -6,6 +6,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 silent! Bundle 'gmarik/vundle'
 
+Bundle 'gagoar/StripWhiteSpaces'
 Bundle 'tpope/vim-endwise'
 
 " Basic Configuration
@@ -29,3 +30,6 @@ set smartcase                   " ... unless they contain at least one capital l
 
 "" Key-bindings
 imap jj <ESC>
+
+"" Behavior
+set tags+=./gems.tags           " look for Rubygems tags file in project
