@@ -32,5 +32,11 @@ set smartcase                   " ... unless they contain at least one capital l
 "" Key-bindings
 imap jj <ESC>
 
+""" Buffers
+nnoremap <silent> [b :bprevious<CR>
+nnoremap <silent> ]b :bnext<CR>
+nnoremap <silent> ]B :bfirst<CR>
+nnoremap <silent> [B :blast<CR>
+
 "" Behavior
 set tags+=./gems.tags           " look for Rubygems tags file in project
