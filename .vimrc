@@ -7,11 +7,13 @@ call vundle#rc()
 silent! Bundle 'gmarik/vundle'
 
 Bundle 'gagoar/StripWhiteSpaces'
+Bundle 'flazz/vim-colorschemes.git'
 Bundle 'tpope/vim-endwise'
 
 " Basic Configuration
 syntax enable
 set encoding=utf-8
+set clipboard="unnamed"         " allow copy and paste to system clipboard
 set hidden                      " allow changing buffers w/o write
 set number                      " show line numbers
 set showcmd                     " display incomplete commands
